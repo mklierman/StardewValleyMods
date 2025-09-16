@@ -1,0 +1,10 @@
+{
+  "Name": "Empty Watering Can Sounds",
+  "Author": "SirDigby",
+  "Version": "1.0.0",
+  "Description": "Adds a distinct sound when you use an empty watering can",
+  "UniqueID": "SirDigby.EmptyWateringCanSound",
+  "EntryDll": "EmptyWateringCanSound.dll",
+  "MinimumApiVersion": "3.0.0",
+  "UpdateKeys": [ "Nexus:22354" ]
+}
