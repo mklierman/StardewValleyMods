@@ -1,5 +1,5 @@
 ﻿{
   "SoundDelay": 500,
   "SoundID": "cavedrip",
-  "AlwaysPlay":  true
+  "AlwaysPlay": false
 }

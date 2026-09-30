@@ -1,4 +1,5 @@
 ﻿{
   "MinesEnabled": true,
-  "VolcanoEnabled":  true
+  "VolcanoEnabled": true,
+  "FarmEnabled": true
 }

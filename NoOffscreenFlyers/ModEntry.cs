@@ -44,6 +44,11 @@ namespace NoOffscreenFlyers
                prefix: new HarmonyMethod(typeof(ModEntry), nameof(ModEntry.Volcano_SpawnOffscreenFlyingMonsters_Prefix))
             );
 
+            harmony.Patch(
+               original: AccessTools.Method(typeof(StardewValley.Farm), nameof(StardewValley.Farm.spawnFlyingMonstersOffScreen)),
+               prefix: new HarmonyMethod(typeof(ModEntry), nameof(ModEntry.Farm_SpawnOffscreenFlyingMonsters_Prefix))
+            );
+
 
         }
 
@@ -76,8 +81,16 @@ namespace NoOffscreenFlyers
                 mod: ModManifest,
                 name: () => "Prevent Spawning in Volcano",
                 tooltip: () => "You may want to turn it off to kill more fireballs or something",
-                getValue: () => Config.MinesEnabled,
-                setValue: value => Config.MinesEnabled = value
+                getValue: () => Config.VolcanoEnabled,
+                setValue: value => Config.VolcanoEnabled = value
+            );
+
+            configMenu.AddBoolOption(
+                mod: ModManifest,
+                name: () => "Prevent Spawning on the Farm",
+                tooltip: () => "Stops wilderness-farm bats and other flying monsters from spawning off-screen",
+                getValue: () => Config.FarmEnabled,
+                setValue: value => Config.FarmEnabled = value
             );
 
         }
@@ -122,11 +135,25 @@ namespace NoOffscreenFlyers
                 return true;
             }
         }
+
+        public static bool Farm_SpawnOffscreenFlyingMonsters_Prefix()
+        {
+            try
+            {
+                return !Config.FarmEnabled;
+            }
+            catch (Exception ex)
+            {
+                SMonitor.Log($"Failed in {nameof(Farm_SpawnOffscreenFlyingMonsters_Prefix)}:\n{ex}", LogLevel.Error);
+                return true;
+            }
+        }
     }
 
     public class ModConfig
     {
         public bool MinesEnabled { get; set; } = true;
         public bool VolcanoEnabled { get; set; } = true;
+        public bool FarmEnabled { get; set; } = true;
     }
 }

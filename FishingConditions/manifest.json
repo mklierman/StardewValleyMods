@@ -1,7 +1,7 @@
 {
-  "Name": "Fishing Conditions",
+  "Name": "Fish Any Time and Weather",
   "Author": "SirDigby",
-  "Version": "1.0.0",
+  "Version": "1.0.1",
   "Description": "Removes Time and Weather conditions from fish",
   "UniqueID": "SirDigby.FishingConditions",
   "EntryDll": "FishingConditions.dll",

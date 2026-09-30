@@ -110,6 +110,6 @@ namespace EmptyWateringCanSound
     {
         public int SoundDelay { get; set; } = 500;
         public string SoundID { get; set; } = "cavedrip";
-        public bool AlwaysPlay { get; set; } = true;
+        public bool AlwaysPlay { get; set; } = false;
     }
 }

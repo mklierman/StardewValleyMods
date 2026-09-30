@@ -1,0 +1,10 @@
+{
+  "Name": "Better Shaving",
+  "Author": "SirDigbyModding",
+  "Version": "1.0.1",
+  "Description": "Adds extra wood drops when using the Shaving enchantment",
+  "UniqueID": "SirDigby.BetterShaving",
+  "EntryDll": "BetterShaving.dll",
+  "MinimumApiVersion": "3.0.0",
+  "UpdateKeys": [ "Nexus:38369" ]
+}

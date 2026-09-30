@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmptyWateringCanSound", "Em
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FishingConditions", "FishingConditions\FishingConditions.csproj", "{F16E326F-9372-B3B9-6EF4-2B3C126287A4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OneItemBundles", "OneItemBundles\OneItemBundles.csproj", "{C4E8A1D7-6B2F-4A91-8E35-7D0F9A2B4C18}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BetterShaving", "BetterShaving\BetterShaving.csproj", "{B7E4C1A2-8D3F-4E61-9A05-6C2D8F4B1E70}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{F16E326F-9372-B3B9-6EF4-2B3C126287A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F16E326F-9372-B3B9-6EF4-2B3C126287A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F16E326F-9372-B3B9-6EF4-2B3C126287A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4E8A1D7-6B2F-4A91-8E35-7D0F9A2B4C18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4E8A1D7-6B2F-4A91-8E35-7D0F9A2B4C18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4E8A1D7-6B2F-4A91-8E35-7D0F9A2B4C18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4E8A1D7-6B2F-4A91-8E35-7D0F9A2B4C18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7E4C1A2-8D3F-4E61-9A05-6C2D8F4B1E70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7E4C1A2-8D3F-4E61-9A05-6C2D8F4B1E70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7E4C1A2-8D3F-4E61-9A05-6C2D8F4B1E70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7E4C1A2-8D3F-4E61-9A05-6C2D8F4B1E70}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
