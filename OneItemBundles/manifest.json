@@ -1,7 +1,7 @@
 {
   "Name": "One Item Bundles",
   "Author": "SirDigby",
-  "Version": "1.0.0",
+  "Version": "1.1.0",
   "Description": "Community Center bundles are completed by donating any one of their items.",
   "UniqueID": "SirDigby.OneItemBundles",
   "EntryDll": "OneItemBundles.dll",
